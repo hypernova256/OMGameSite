@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Help | Online Multiplayer Games - OMG</title>
+        <link rel="stylesheet" href="../static/help.css">
+        <link rel="stylesheet" href="../static/all.css">
+        <link rel="shortcut icon" type="image/png" href="../static/assets/tetrisCatIcon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="header-left"><a href="/"><img style="height: auto; width: 35px" src="../static/assets/tetrisCatIcon.png"/></a></div>
+            <div class="header-center">
+                <a href="/">Home</a>
+                <a href="help">Help</a>
+                <a href="store">Store</a>
+            </div>
+            <div class="header-right">
+                <a href="#" class="signup-btn">Sign up</a>
+                <a href="#" class="login-btn">Login</a>
+            </div>
+        </div>
+
+        <div class="scroll-container">
+            <div class="scroll-progress-bar" id="scrollBar"></div>
+        </div>
+
+        <div class="help-section">
+            <h1>Game Help & Instructions</h1>
+            <p>Click on a game below to learn how to play.</p>
+
+            <div class="help-cards">
+                <div class="card">
+                    <img src="../static/assets/tetrisCat4.GIF" alt="Chess">
+                    <h3>Chess</h3>
+                    <p>Understand the rules and strategies of Chess.</p>
+                    <a href="/chess">Learn More</a>
+                </div>
+
+                <div class="card">
+                    <img src="../static/assets/tetrisCat5.gif" alt="Checkers">
+                    <h3>Checkers</h3>
+                    <p>Simple yet strategic. Learn how to win in Checkers.</p>
+                    <a href="/checkers">Learn More</a>
+                </div>
+
+                <div class="card">
+                    <img src="../static/assets/tetrisCat3.GIF" alt="TicTacToe">
+                    <h3>TicTacToe</h3>
+                    <p>Three in a row. Think fast. Block smart. Win big!</p>
+                    <a href="/tictactoe">Learn More</a>
+                </div>
+
+                <div class="card">
+                    <img src="../static/assets/tetrisCat2.GIF" alt="Connect4">
+                    <h3>Connect4</h3>
+                    <p>Drop, Stack, Win! Can you outsmart your opponent?</p>
+                    <a href="/connect4">Learn More</a>
+                </div>
+
+                <div class="card">
+                    <img src="../static/assets/tetrisCat6.gif" alt="Tetris">
+                    <h3>Tetris</h3>
+                    <p>Learn how to master the classic falling block game.</p>
+                    <a href="#">Coming Soon&trade;</a>
+                </div>
+
+                <div class="card">
+                    <img src="../static/assets/tetrisCat6.gif" alt="Tetris">
+                    <h3>Monopoly</h3>
+                    <p>Build your empire and bankrupt your friends.</p>
+                    <a href="#">Coming Soon&trade;</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="chat-button" id="chatToggle">💬</button>
+        <div class="chat-popup" id="chatPopup">
+            <div class="chat-header">
+                Chat Support
+                <button class="chat-close-btn" onclick="closeChat()">×</button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-message bot">Hi I'm TetrisCat!</div>
+                <div class="chat-message bot">We are currently developing our chat feature.</div>
+                <div class="chat-message bot">Please contact support by email at <a href="mailto:tetrisfans@omgame.club" class="email-link">tetrisfans@omgame.club</a> 😊</div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chatInput" placeholder="Ask me a question..." />
+                <button onclick="sendMessage()">➤</button>
+            </div>
+        </div>
+        <script src="../static/script.js"></script>
+    </body>
+</html>
