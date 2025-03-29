@@ -9,16 +9,18 @@ function scrollBar() {
     document.getElementById("scrollBar").style.width = scrolled + "%";
 }
 
-window.onload = function() {
-    document.getElementById('popupBox').classList.add('show');
-    document.getElementById('overlay').classList.add('show');
+// window.onload = function() {
+//     document.getElementById('popupBox').classList.add('show');
+//     document.getElementById('overlay').classList.add('show');
+// };
 
+window.onload = function () {
     const chatButton = document.getElementById('chatToggle');
     chatButton.classList.add('bouncing');
     setTimeout(() => {
         chatButton.classList.remove('bouncing');
     }, 5000);
-};
+}
 
 function closePopup() {
     const popupBox = document.getElementById('popupBox');
