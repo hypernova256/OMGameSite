@@ -113,6 +113,11 @@ body {
 	outline: none;
 }
 
+.chat-input-container input:focus {
+	border: 1px solid #8e8e8e;
+
+}
+
 .chat-input-container button {
 	background-color: #ff5eac;
 	color: white;
@@ -122,8 +127,14 @@ body {
 	height: 35px;
 	margin-left: 8px;
 	cursor: pointer;
+	transition: background-color 0.3s ease;
 	font-size: 1.2rem;
 }
+
+.chat-input-container button:hover {
+	background-color: #d15591;
+}
+
 
 .chat-close-btn {
 	background: transparent;
@@ -204,7 +215,7 @@ body {
 	padding: 40px 30px 30px;
 	border-radius: 25px;
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-	max-width: 400px;
+	width: 400px;
 	position: relative;
 }
 
@@ -302,7 +313,7 @@ body {
 .scroll-container {
     width: 100%;
     height: 4px;
-    background: #ccc;
+    background: #b53873;
     position: fixed;
     z-index: 11;
     top: 85px;
@@ -310,7 +321,7 @@ body {
 
 .scroll-progress-bar {
     height: 4px;
-    background: #882856;
+    background: #701942;
     z-index: 11;
     top: 70px;
     width: 0;
@@ -365,7 +376,7 @@ body {
 }
 
 .signup-btn {
-    background-color: #555;
+    background-color: #B14CAA;
     color: white;
     border-radius: 50px 0 0 50px;
 	padding: 10px 20px 10px 20px;
@@ -375,11 +386,11 @@ body {
 }
 
 .signup-btn:hover {
-    background-color: #777;
+    background-color: #984392;
 }
 
 .login-btn {
-    background-color: #b30000;
+    background-color: #592C55;
     color: white;
 	padding: 10px 20px 10px 20px;
     border-radius: 0 50px 50px 0;
@@ -389,7 +400,7 @@ body {
 }
 
 .login-btn:hover {
-    background-color: #ff0000;
+    background-color: #451d41;
 }
 
 /* Footer */
